@@ -2,6 +2,61 @@ body {
   background-color: #f8feff;
 }
 
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(Benteng-Fort-Marlborough.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  background: linear-gradient(0deg, #0f172a 8%, rgba(255, 255, 255, 0) 50%);
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+}
+
+.hero .content h1 {
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  line-height: 1.2;
+}
+
+.hero .content h1 span {
+  color: var(--primary);
+}
+
+.hero .content p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  line-height: 1.4rem;
+  font-weight: 100;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+.hero .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
 .hiddencenter {
   opacity: 0;
   transition: all 1s;
@@ -82,6 +137,16 @@ button#teksnav {
 button#teksnav::before {
   margin-left: auto;
 }
+
+button#teksnav::after,
+button#teksnav::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #00bfff;
+  display: block;
+  transition: 0.5s;
+}
 .img-sponsor {
   width: 100px;
   height: 100px;
@@ -95,20 +160,6 @@ button#teksnav::before {
   margin: 0 auto;
   display: block;
   filter: brightness(0.8);
-}
-/* Menghilangkan latar belakang putih */
-.tiktok-embed {
-  background: transparent !important;
-}
-
-button#teksnav::after,
-button#teksnav::before {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: #00bfff;
-  display: block;
-  transition: 0.5s;
 }
 
 button#teksnav:hover::after,
