@@ -82,16 +82,6 @@ button#teksnav {
 button#teksnav::before {
   margin-left: auto;
 }
-
-button#teksnav::after,
-button#teksnav::before {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: #00bfff;
-  display: block;
-  transition: 0.5s;
-}
 .img-sponsor {
   width: 100px;
   height: 100px;
@@ -105,6 +95,20 @@ button#teksnav::before {
   margin: 0 auto;
   display: block;
   filter: brightness(0.8);
+}
+/* Menghilangkan latar belakang putih */
+.tiktok-embed {
+  background: transparent !important;
+}
+
+button#teksnav::after,
+button#teksnav::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #00bfff;
+  display: block;
+  transition: 0.5s;
 }
 
 button#teksnav:hover::after,
@@ -139,7 +143,7 @@ button#teksnav:hover::before {
   font-size: 40px;
 }
 .teksps {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 @media (max-width: 1000px) {
